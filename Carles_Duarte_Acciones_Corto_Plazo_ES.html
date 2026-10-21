@@ -366,7 +366,7 @@ footer .wrap { padding-block: 24px max(24px, env(safe-area-inset-bottom, 0px)); 
             <p class="strong">Sacar el JavaScript inline del HTML y optimizarlo.</p>
             <p>Es lo que quita entre el 85% y el 91% del peso. Se audita primero qué es cada script grande (en la landing de hombre, dos suman 2,66 MB), se quita lo que no se use, se minifica y se pasa a ficheros externos con caché y carga con defer o async. Los datos grandes, como el listado de centros, pasan a un JSON que se cargue solo cuando haga falta. Después se vuelve a medir.</p>
           </div>
-          <p class="note">Cada fichero externo tiene su propio límite de 2 MB, y los dos scripts grandes caben (1,43 MB y 1,23 MB). Pendiente de medir: en qué byte cae cada elemento clave (h1, contenido, JSON-LD, FAQ y pie), para saber qué parte queda hoy fuera de los 2 MB. Exige revisar el tema de Shopify y las apps instaladas.</p>
+          <p class="note">Cada fichero externo tiene su propio límite de 2 MB y los dos scripts grandes caben. Pendiente: medir en qué byte cae cada elemento clave (h1, contenido, JSON-LD, FAQ, pie).</p>
         </div>
 
 
