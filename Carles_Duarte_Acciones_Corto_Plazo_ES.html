@@ -427,7 +427,7 @@ footer .wrap { padding-block: 24px max(24px, env(safe-area-inset-bottom, 0px)); 
             <li>Añadir las URLs de WordPress en el robots.txt con disallow.</li>
             <li>Dar un 403 a los bots en esas URLs, para que no se llegue a servir el error 404. El 403 lo tiene que dar Cloudflare.</li>
           </ul>
-          <p class="note">En Cloudflare se crea como regla personalizada del WAF (Security rules › Create rule › Custom rules), con las rutas de WordPress como condición, por ejemplo /wp-admin/admin-ajax.php, y la acción Block. Si se configura una respuesta propia, el código por defecto es 403. Fuente: <a href="https://developers.cloudflare.com/waf/custom-rules/create-dashboard/" target="_blank" rel="noopener">documentación de Cloudflare</a>.</p>
+          <p class="note">Regla personalizada del WAF en Cloudflare, con acción Block (responde 403). <a href="https://developers.cloudflare.com/waf/custom-rules/create-dashboard/" target="_blank" rel="noopener">Documentación de Cloudflare</a>.</p>
         </div>
       </div>
     </article>
